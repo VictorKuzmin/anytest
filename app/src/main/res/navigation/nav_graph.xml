@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/fragmentPager">
+
+    <fragment
+            android:id="@+id/fragmentPager"
+            android:name="ru.any_test.anytest.root.FragmentPager"
+            android:label="FragmentPager"
+            tools:layout="@layout/fragment_pager">
+        <action
+                android:id="@+id/action_fragmentPager_to_fragmentTestsList"
+                app:destination="@id/fragmentTestsList" />
+    </fragment>
+    <fragment
+            android:id="@+id/fragmentTestsList"
+            android:name="ru.any_test.anytest.testlist.FragmentTestsList"
+            android:label="FragmentTestsList"
+            tools:layout="@layout/fragment_tests_list">
+        <argument
+                android:name="position"
+                app:argType="integer"
+                android:defaultValue="0" />
+        <action
+                android:id="@+id/action_fragmentTestsList_to_fragmentComments"
+                app:destination="@id/fragmentComments" />
+    </fragment>
+    <fragment
+            android:id="@+id/fragmentComments"
+            android:name="ru.any_test.anytest.comments.FragmentComments"
+            android:label="FragmentComments"
+            tools:layout="@layout/fragment_comments">
+        <argument
+                android:name="testTitle"
+                app:argType="string" />
+        <argument
+                android:name="testId"
+                app:argType="integer"
+                android:defaultValue="0" />
+        <action
+                android:id="@+id/action_fragmentComments_to_fragmentQuestion"
+                app:destination="@id/fragmentQuestion" />
+    </fragment>
+    <fragment
+            android:id="@+id/fragmentQuestion"
+            android:name="ru.any_test.anytest.question.FragmentQuestion"
+            android:label="FragmentQuestion"
+            tools:layout="@layout/fragment_question">
+        <action
+                android:id="@+id/action_fragmentQuestion_to_fragmentAnswerList"
+                app:destination="@id/fragmentAnswerList" />
+    </fragment>
+    <fragment
+            android:id="@+id/fragmentAnswerList"
+            android:name="ru.any_test.anytest.answers.FragmentAnswerList"
+            android:label="FragmentAnswerList" >
+        <argument
+                android:name="answerList"
+                app:argType="ru.any_test.anytest.model.Category[]" />
+    </fragment>
+    <fragment
+            android:id="@+id/fragmentProfile"
+            android:name="ru.any_test.anytest.profile.FragmentProfile"
+            android:label="FragmentProfile" />
+
+<!--    Navigate to profile from everywhere-->
+    <action
+            android:id="@+id/to_fragment_profile_action"
+            app:destination="@id/fragmentProfile" />
+</navigation>

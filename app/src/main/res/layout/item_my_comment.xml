@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_bubble_shape"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:layout_marginVertical="@dimen/margin16">
+        <TextView
+                android:id="@+id/textViewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin8"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingTop="@dimen/padding8"
+                android:paddingRight="@dimen/padding16"
+                android:paddingBottom="@dimen/padding8"
+                style="@style/text14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="test message"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
+
+
+

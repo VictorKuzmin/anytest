@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AnyTest</string>
+    <string name="profile_name">Профиль</string>
+    <string name="user_name">Имя</string>
+    <string name="user_surname">Фамилия</string>
+    <string name="user_password">Пароль</string>
+    <string name="blog">BLOG</string>
+    <string name="no_such_group_of_questions">Нет такой группы вопросов</string>
+    <string name="question_pos_in_questions_count">Вопрос %1$s из %2$s:</string>
+    <string name="categories">Категории</string>
+    <string name="comments">Комментарии</string>
+    <string name="give_answers">Ответить</string>
+    <string name="pass_test">Пройти тест</string>
+    <string name="your_comment">Ваш комментарий</string>
+</resources>

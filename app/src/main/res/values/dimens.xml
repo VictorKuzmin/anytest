@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin32">32dp</dimen>
+    <dimen name="margin64">64dp</dimen>
+    <dimen name="margin128">128dp</dimen>
+
+    <dimen name="padding4">4dp</dimen>
+    <dimen name="padding8">8dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="padding16">16dp</dimen>
+
+    <dimen name="icon_category_size">100dp</dimen>
+</resources>
